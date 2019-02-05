@@ -14,7 +14,7 @@
         "ext-swoole": "^4.1.0",
         "ext-pcntl": "*",
         "ext-igbinary": "*",
-        "bee-framework/util": "^1.0"
+        "bee-framework/util": "^2.0"
     },
     "require-dev": {
         "phalcon/ide-stubs": "*",
