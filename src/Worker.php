@@ -1,7 +1,6 @@
 <?php
 namespace Bee\Process;
 
-use Bee\Injectable;
 use Swoole\Process;
 use Swoole\Timer;
 
@@ -9,7 +8,7 @@ use Swoole\Timer;
  * Worker
  * @package Bee\Process
  */
-abstract class Worker extends Injectable
+abstract class Worker
 {
     /**
      * 当前进程是否空闲
