@@ -1,6 +1,7 @@
 <?php
 namespace Bee\Process;
 
+use Swoole\Coroutine;
 use Swoole\Process;
 use Swoole\Timer;
 
@@ -110,6 +111,17 @@ abstract class Worker
     protected function workerExit()
     {
         $this->exit();
+    }
+
+    /**
+     * @param Process $process
+     * @param $ppid
+     */
+    public function __invoke(Process $process, $ppid)
+    {
+        Coroutine::create(function () use ($process, $ppid) {
+            $this->handle($process, $ppid);
+        });
     }
 
     /**
