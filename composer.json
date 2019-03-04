@@ -11,10 +11,9 @@
     "require": {
         "php": "^7.1",
         "adhocore/cli": "^0.3.2",
-        "ext-swoole": "^4.1.0",
+        "ext-swoole": ">=4.2.0",
         "ext-pcntl": "*",
-        "ext-igbinary": "*",
-        "bee-framework/util": "^2.0"
+        "bee-framework/util": "^2.1"
     },
     "require-dev": {
         "phalcon/ide-stubs": "*",

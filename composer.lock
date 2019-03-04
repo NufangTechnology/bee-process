@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4532e937d52d153b2980ecc639cfe0e8",
+    "content-hash": "5b8264f656ec00fadafd5ce6ea825eaa",
     "packages": [
         {
             "name": "adhocore/cli",
@@ -64,24 +64,19 @@
         },
         {
             "name": "bee-framework/util",
-            "version": "v1.0.0",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Anoxia/bee-util.git",
-                "reference": "dceb0117962de995e92a28ddb94a5c38a58a2876"
+                "url": "https://github.com/NufangTechnology/bee-util.git",
+                "reference": "eecc69eb0f4b87511544dd54b79fbb2fec38c1d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Anoxia/bee-util/zipball/dceb0117962de995e92a28ddb94a5c38a58a2876",
-                "reference": "dceb0117962de995e92a28ddb94a5c38a58a2876",
+                "url": "https://api.github.com/repos/NufangTechnology/bee-util/zipball/eecc69eb0f4b87511544dd54b79fbb2fec38c1d9",
+                "reference": "eecc69eb0f4b87511544dd54b79fbb2fec38c1d9",
                 "shasum": ""
             },
-            "require": {
-                "ext-inotify": "*",
-                "ext-phalcon": "^3.2.0"
-            },
             "require-dev": {
-                "phalcon/ide-stubs": "*",
                 "phpunit/phpunit": "^7.2"
             },
             "type": "library",
@@ -92,7 +87,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Bee框架通用类库",
-            "time": "2018-10-11T15:02:17+00:00"
+            "time": "2019-03-04T03:40:15+00:00"
         }
     ],
     "packages-dev": [
@@ -102,12 +97,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wudi/swoole-ide-helper.git",
-                "reference": "d5ba04bca84302713dc4ae288dcdf11febb82d35"
+                "reference": "fae3d09e7494245a5bab0adcd09a1612fc4112b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wudi/swoole-ide-helper/zipball/d5ba04bca84302713dc4ae288dcdf11febb82d35",
-                "reference": "d5ba04bca84302713dc4ae288dcdf11febb82d35",
+                "url": "https://api.github.com/repos/wudi/swoole-ide-helper/zipball/fae3d09e7494245a5bab0adcd09a1612fc4112b5",
+                "reference": "fae3d09e7494245a5bab0adcd09a1612fc4112b5",
                 "shasum": ""
             },
             "type": "library",
@@ -134,7 +129,55 @@
                 "sublime",
                 "swoole"
             ],
-            "time": "2018-10-25T04:44:48+00:00"
+            "time": "2019-02-12T03:03:41+00:00"
+        },
+        {
+            "name": "phalcon/ide-stubs",
+            "version": "v3.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phalcon/ide-stubs.git",
+                "reference": "65144f2b0fad32b182ccb062b1efc1b4edea5d44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phalcon/ide-stubs/zipball/65144f2b0fad32b182ccb062b1efc1b4edea5d44",
+                "reference": "65144f2b0fad32b182ccb062b1efc1b4edea5d44",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Phalcon Team",
+                    "email": "team@phalconphp.com",
+                    "homepage": "https://phalconphp.com/en/team"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/phalcon/ide-stubs/graphs/contributors"
+                }
+            ],
+            "description": "The most complete Phalcon Framework IDE stubs library which enables autocompletion in modern IDEs.",
+            "homepage": "https://phalconphp.com",
+            "keywords": [
+                "Devtools",
+                "Eclipse",
+                "autocomplete",
+                "ide",
+                "netbeans",
+                "phalcon",
+                "phpstorm",
+                "stub",
+                "stubs"
+            ],
+            "time": "2018-12-09T14:11:06+00:00"
         }
     ],
     "aliases": [],
@@ -146,10 +189,8 @@
     "prefer-lowest": false,
     "platform": {
         "php": "^7.1",
-        "ext-inotify": "^2.0.0",
-        "ext-swoole": "^4.1.0",
-        "ext-pcntl": "*",
-        "ext-igbinary": "*"
+        "ext-swoole": ">=4.2.0",
+        "ext-pcntl": "*"
     },
     "platform-dev": []
 }
